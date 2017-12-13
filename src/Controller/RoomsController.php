@@ -14,7 +14,6 @@ class RoomsController extends AppController
 
     /**
      * Index method
-     *
      * @return \Cake\Http\Response|void
      */
     public function index()
@@ -37,9 +36,11 @@ class RoomsController extends AppController
         $room = $this->Rooms->get($id, [
             'contain' => []
         ]);
+        
 
         $this->set('room', $room);
         $this->set('_serialize', ['room']);
+        
     }
 
     /**
