@@ -16,7 +16,8 @@ class RoomsControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.rooms'
+        'app.rooms',
+        'app.showtimes'
     ];
 
     /**
